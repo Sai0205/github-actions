@@ -1,7 +1,8 @@
 name: pull request workflow
+
 on:
   pull_request: [main]
-    types: [opened, synchronize, closed]
+    types: ["opened", "synchronize", "closed"]
 
 jobs:
   pr_jobs:
