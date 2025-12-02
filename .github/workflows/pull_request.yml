@@ -1,0 +1,12 @@
+name: pull request workflow
+on:
+  pull_request: [main]
+    types: [opened, synchronize, closed]
+
+jobs:
+  pr_jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+
